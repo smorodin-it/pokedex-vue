@@ -1,9 +1,13 @@
-<script lang="ts">
-export default {};
-</script>
-
 <template>
-  <div>Data Card</div>
+  <div>Card View</div>
 </template>
 
-<style lang="scss"></style>
+<script>
+export default {
+  setup() {
+    return {};
+  },
+};
+</script>
+
+<style lang="scss" scoped></style>
