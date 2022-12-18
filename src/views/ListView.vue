@@ -1,9 +1,18 @@
-<script lang="ts">
-export default {};
-</script>
-
 <template>
-  <div>ListView</div>
+  <div class="view">
+    <ListHeader />
+  </div>
 </template>
 
-<style lang="scss"></style>
+<script setup lang="ts">
+import ListHeader from "../components/headers/ListHeader.vue";
+</script>
+
+<style lang="scss" scoped>
+.view {
+  padding: 2.4rem 1.6rem;
+  background: var(--background);
+  border-radius: 1.2rem;
+  height: 100%;
+}
+</style>

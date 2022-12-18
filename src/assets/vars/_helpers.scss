@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  // border: 0.1rem solid red;
+}
+
+body {
+  font: var(--small) / 1.6 Poppins;
+  color: var(--dark-gray);
+
+  background-color: darkslategray;
+
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+}
