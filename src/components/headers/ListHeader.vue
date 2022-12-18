@@ -21,7 +21,9 @@ import SearchInput from "../inputs/SearchInput.vue";
 <style lang="scss" scoped>
 nav {
   width: 100%;
+  margin-bottom: 0.8rem;
   padding: 0.4rem 0.8rem;
+
   display: flex;
   align-items: center;
   gap: 1.6rem;
