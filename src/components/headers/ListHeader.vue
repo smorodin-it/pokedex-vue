@@ -31,10 +31,7 @@ nav {
   .title {
     flex-grow: 1;
 
-    /* font: 700 var(--title) / 1.3; */
-    font-size: var(--title);
-    font-weight: 700;
-    line-height: 1.3;
+    font: 700 var(--title) / 1.3 "Poppins";
   }
 
   .sort {
