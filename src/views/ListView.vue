@@ -24,6 +24,8 @@ const pokemoList = ref<PokemonListModel[]>([]);
 const getData = async () => {
   const resp = await PokemonService.list();
 
+  // TODO: Implement getting data types of all fetched pokemons
+
   if (resp) {
     pokemoList.value.push(...resp.results);
   }

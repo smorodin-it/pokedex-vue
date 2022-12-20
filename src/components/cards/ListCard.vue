@@ -44,6 +44,49 @@ const imgUrl = createImgUrl(id);
   display: flex;
   flex-direction: column;
 
+  &-color {
+    &_fighting {
+    }
+    &_flying {
+    }
+    &_poison {
+    }
+    &_ground {
+    }
+    &_rock {
+    }
+    &_bug {
+    }
+    &_ghost {
+    }
+    &_steel {
+    }
+    &_fire {
+    }
+    &_water {
+    }
+    &_grass {
+    }
+    &_electric {
+    }
+    &_psychic {
+    }
+    &_ice {
+    }
+    &_dragon {
+    }
+    &_dark {
+    }
+    &_fairy {
+    }
+    &_unknown {
+    }
+    &_shadow {
+    }
+    &_normal {
+    }
+  }
+
   &-header {
     font: var(--x-small) / 1.5 Poppins;
     text-align: right;
@@ -74,6 +117,8 @@ const imgUrl = createImgUrl(id);
     border-radius: 0 0 0.8rem 0.8rem;
 
     background: red;
+
+    color: var(--white);
   }
 }
 </style>
