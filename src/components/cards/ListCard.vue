@@ -46,44 +46,62 @@ const imgUrl = createImgUrl(id);
 
   &-color {
     &_fighting {
+      border: 0.1rem solid #c12239;
     }
     &_flying {
+      border: 0.1rem solid #a891ec;
     }
     &_poison {
+      border: 0.1rem solid #a43e9e;
     }
     &_ground {
+      border: 0.1rem solid #dec16b;
     }
     &_rock {
+      border: 0.1rem solid #b69e31;
     }
     &_bug {
+      border: 0.1rem solid #a7b723;
     }
     &_ghost {
+      border: 0.1rem solid #70559b;
     }
     &_steel {
+      border: 0.1rem solid #b7b9d0;
     }
     &_fire {
+      border: 0.1rem solid #f57d31;
     }
     &_water {
+      border: 0.1rem solid #6493eb;
     }
     &_grass {
+      border: 0.1rem solid #74cb48;
     }
     &_electric {
+      border: 0.1rem solid #f9cf30;
     }
     &_psychic {
+      border: 0.1rem solid #fb5584;
     }
     &_ice {
+      border: 0.1rem solid #9ad6df;
     }
     &_dragon {
+      border: 0.1rem solid #7037ff;
     }
     &_dark {
+      border: 0.1rem solid #75574c;
     }
     &_fairy {
+      border: 0.1rem solid #e69eac;
     }
     &_unknown {
     }
     &_shadow {
     }
     &_normal {
+      border: 0.1rem solid #aaa67f;
     }
   }
 
