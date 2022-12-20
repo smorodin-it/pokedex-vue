@@ -8,7 +8,7 @@ import type {
 
 export class PokemonService {
   static list = async (
-    params: PokemonListUrlParamsModel
+    params?: PokemonListUrlParamsModel
   ): Promise<ResponsePaginated<PokemonListModel> | null> =>
-    await api<ResponsePaginated<PokemonListModel>>("/pokemon", params);
+    api<ResponsePaginated<PokemonListModel>>("/pokemon", params);
 }

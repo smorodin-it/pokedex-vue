@@ -1,7 +1,7 @@
 import { parseUrlParams } from "@/utils/functions";
 
 export const FetchConfig = {
-  BaseUrl: "https://pokeapi.co/api/v2/",
+  BaseUrl: "https://pokeapi.co/api/v2",
   Headers: [],
 };
 
@@ -16,10 +16,11 @@ export async function api<T>(
   }
 
   const resp = await fetch(`${FetchConfig.BaseUrl}${url}?${urlParams}`);
+
+  // TODO: Check how to work with this error
   if (!resp.ok) {
     throw new Error(`${resp.status} | ${resp.statusText}`);
   }
-  const json: { data: T } = await resp.json();
 
-  return json.data;
+  return resp.json();
 }
