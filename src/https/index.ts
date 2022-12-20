@@ -1,4 +1,3 @@
-import type { PokemonListModel } from "@/models/PokemonModel";
 import { parseUrlParams } from "@/utils/functions";
 
 export const FetchConfig = {
