@@ -8,11 +8,8 @@ import type {
 
 export class PokemonService {
   static list = async (
-    name = "",
     params?: PokemonListUrlParamsModel
   ): Promise<ResponsePaginated<PokemonListModel> | null> =>
-    api<ResponsePaginated<PokemonListModel>>(
-      `/pokemon${name ? "/" + name + "/" : ""}?limit=1154`,
-      params
-    );
+    // TODO: Implement pagination
+    api<ResponsePaginated<PokemonListModel>>(`/pokemon?limit=1154`, params);
 }

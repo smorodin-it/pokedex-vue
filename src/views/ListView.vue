@@ -3,7 +3,7 @@
     <ListHeader />
     <ul class="list">
       <ListCard
-        v-for="pokemon in pokemoList"
+        v-for="pokemon in pokemonStore.computedData"
         :key="pokemon.name"
         :pokemon="pokemon"
       />
@@ -13,13 +13,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
 import ListCard from "@/components/cards/ListCard.vue";
-import type { PokemonListModel } from "@/models/PokemonModel";
 import { PokemonService } from "@/services/PokemonService";
 import ListHeader from "@/components/headers/ListHeader.vue";
+import { usePokemonStore } from "@/stores/PokemonStore";
 
-const pokemoList = ref<PokemonListModel[]>([]);
+const pokemonStore = usePokemonStore();
 
 const getData = async () => {
   const resp = await PokemonService.list();
@@ -27,7 +26,7 @@ const getData = async () => {
   // TODO: Implement getting data types of all fetched pokemons
 
   if (resp) {
-    pokemoList.value.push(...resp.results);
+    pokemonStore.initData(resp.results);
   }
 };
 

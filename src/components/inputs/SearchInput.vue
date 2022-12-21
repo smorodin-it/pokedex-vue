@@ -1,12 +1,15 @@
 <template>
   <div class="search">
     <img :src="SearchIcon" alt="search icon" />
-    <input placeholder="Search..." />
+    <input placeholder="Search..." v-model="pokemonStore.searchName" />
   </div>
 </template>
 
 <script setup lang="ts">
+import { usePokemonStore } from "@/stores/PokemonStore";
 import SearchIcon from "../icons/SearchIcon.svg";
+
+const pokemonStore = usePokemonStore();
 </script>
 
 <style lang="scss" scoped>
