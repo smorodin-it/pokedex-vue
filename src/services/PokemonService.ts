@@ -10,5 +10,5 @@ export class PokemonService {
   static list = async (
     params?: PokemonListUrlParamsModel
   ): Promise<ResponsePaginated<PokemonListModel> | null> =>
-    api<ResponsePaginated<PokemonListModel>>("/pokemon", params);
+    api<ResponsePaginated<PokemonListModel>>("/pokemon?limit=1154", params);
 }

@@ -46,10 +46,12 @@ getData();
 
   .list {
     margin-top: 0.8rem;
-    height: 100%;
 
     display: flex;
     flex-wrap: wrap;
+
+    justify-content: center;
+
     gap: 0.8rem;
 
     overflow-y: auto;

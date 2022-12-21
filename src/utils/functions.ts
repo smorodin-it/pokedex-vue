@@ -20,7 +20,8 @@ export const getIdFromUrl = (url: string): number => {
 };
 
 export const createImgUrl = (pokemonId: number): string =>
-  `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemonId}.svg`;
+  // `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemonId}.svg`;
+  `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`;
 
 export const firstLetterCapital = (string: string): string =>
   string.charAt(0).toUpperCase() + string.slice(1);
