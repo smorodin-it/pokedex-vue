@@ -1,6 +1,5 @@
 import { api } from "./../https/index";
 
-import type { ResponsePaginated } from "./../models/ResponseModel";
 import type {
   PokemonListModel,
   PokemonListUrlParamsModel,
@@ -9,7 +8,8 @@ import type {
 export class PokemonService {
   static list = async (
     params?: PokemonListUrlParamsModel
-  ): Promise<ResponsePaginated<PokemonListModel> | null> =>
+  ): Promise<PokemonListModel[] | null> =>
     // TODO: Implement pagination
-    api<ResponsePaginated<PokemonListModel>>(`/pokemon?limit=1154`, params);
+    // api<ResponsePaginated<PokemonListModel>>(`/pokemon?limit=1154`, params);
+    api<PokemonListModel[]>(`/list`, params);
 }

@@ -1,6 +1,6 @@
 <template>
   <li class="card">
-    <div class="card-header">#{{ leadingZeros(id, 3) }}</div>
+    <div class="card-header">#{{ leadingZeros(props.pokemon.pkdxId, 3) }}</div>
     <img :src="imgUrl" :alt="props.pokemon.name" />
     <div class="card-footer">{{ firstLetterCapital(props.pokemon.name) }}</div>
   </li>
@@ -10,7 +10,6 @@
 import type { PokemonListModel } from "@/models/PokemonModel";
 import {
   createImgUrl,
-  getIdFromUrl,
   firstLetterCapital,
   leadingZeros,
 } from "@/utils/functions";
@@ -21,8 +20,7 @@ export interface ListCard {
 
 const props = defineProps<ListCard>();
 
-const id = getIdFromUrl(props.pokemon.url);
-const imgUrl = createImgUrl(id);
+const imgUrl = createImgUrl(props.pokemon.pkdxId);
 </script>
 
 <style lang="scss" scoped>

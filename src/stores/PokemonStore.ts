@@ -3,7 +3,6 @@ import { defineStore } from "pinia";
 import type { PokemonListModel } from "@/models/PokemonModel";
 
 export const usePokemonStore = defineStore("pokemonList", () => {
-  const sort = ref()
   const searchName = ref("");
   const data = ref<PokemonListModel[]>([]);
 

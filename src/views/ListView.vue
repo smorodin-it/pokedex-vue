@@ -26,7 +26,7 @@ const getData = async () => {
   // TODO: Implement getting data types of all fetched pokemons
 
   if (resp) {
-    pokemonStore.initData(resp.results);
+    pokemonStore.initData(resp);
   }
 };
 

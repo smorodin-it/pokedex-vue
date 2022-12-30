@@ -1,7 +1,7 @@
 import { parseUrlParams } from "@/utils/functions";
 
 export const FetchConfig = {
-  BaseUrl: "https://pokeapi.co/api/v2",
+  BaseUrl: "http://localhost:3000",
   Headers: [],
 };
 

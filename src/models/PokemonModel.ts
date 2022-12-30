@@ -3,9 +3,18 @@ export interface PokemonListUrlParamsModel extends Record<string, unknown> {
   offset?: number;
 }
 
+export interface PokemonTypeModel {
+  slot: number;
+  type: {
+    Name: string;
+    Url: string;
+  };
+}
+
 export interface PokemonListModel {
   name: string;
-  url: string;
+  pkdxId: number;
+  types: PokemonTypeModel[];
 }
 
 type PokemonType =
@@ -29,14 +38,6 @@ type PokemonType =
   | "unknown"
   | "shadow"
   | "normal";
-
-export interface PokemonTypeModel {
-  slot: number;
-  type: {
-    name: PokemonType;
-    url: string;
-  };
-}
 
 export interface PokemonModel {
   id: number;
